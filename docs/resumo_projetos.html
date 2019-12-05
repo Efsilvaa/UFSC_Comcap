@@ -10,9 +10,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
+<meta name="author" content="Nome do Aluno" />
 
 
-<title>Projeto de Extensão ComcapUFSC</title>
+<title>Resumo dos subprojetos</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -20,6 +21,9 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -250,6 +254,69 @@ $(document).ready(function () {
 
 
 
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
 
 </head>
 
@@ -257,6 +324,16 @@ $(document).ready(function () {
 
 
 <div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -331,30 +408,126 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Projeto de Extensão ComcapUFSC</h1>
+<h1 class="title toc-ignore">Resumo dos subprojetos</h1>
+<h4 class="author">Nome do Aluno</h4>
+<h4 class="date">5 de dezembro de 2019</h4>
 
 </div>
 
 
-<div id="descrição" class="section level2">
-<h2>Descrição</h2>
-<p>Essa página é apenas uma idéia inicial, onde todo o conteúdo deve ser modificado/ajustado.</p>
-<div id="equipe" class="section level3">
-<h3><em>Equipe</em></h3>
+<div id="introdução" class="section level2">
+<h2>Introdução</h2>
+<p>Essa página apresenta um resumo das atividades realizadas no <strong>Projeto ComcapUFSC</strong>.</p>
+<hr />
+</div>
+<div id="subprojeto-indicadores" class="section level2">
+<h2>Subprojeto <strong>Indicadores</strong></h2>
 <ul>
-<li><p>Profa. Mônica Luna</p></li>
-<li><p>Prof. Eduardo F. Silva</p></li>
-<li><p>Maria Eugênia</p></li>
-<li><p>Jéssica</p></li>
-<li><p>Bábara</p></li>
+<li>Título: Indicadores de Desempenho das rotas de recolhimento de lixo</li>
+<li>Data:</li>
 </ul>
-<p><img src="images/RMarkdownOutputFormats.png" /></p>
+<div id="descrição" class="section level3">
+<h3>Descrição</h3>
+<p>Analisar as rotas de recolhimento do lixo seletivo na cidade de Florianópolis por meio de indicadores de desempenho.</p>
+</div>
+<div id="participantes" class="section level3">
+<h3>Participantes</h3>
+<ul>
+<li>…</li>
+<li>…</li>
+</ul>
+</div>
+<div id="objetivos" class="section level3">
+<h3>Objetivos</h3>
+<ul>
+<li>Analise exploratória dos dados</li>
+<li>Seleção de um conjunto de indicadores de desempenho</li>
+<li>Estudo de</li>
+</ul>
+</div>
+<div id="atividades-programadas" class="section level3">
+<h3>Atividades programadas</h3>
+<ul>
+<li>Leitura dos artigos envolvendo KPI na área de coleta de resíduos em cidades</li>
+<li>Selecionar um primeiro grupom de indicadores</li>
+<li>Preparação e limpeza dos dados para anállise</li>
+<li>Calcular os indicadores para a cada rota/região</li>
+<li>Realizar uma análise comparativa tentando identificar ….</li>
+<li>…</li>
+</ul>
+</div>
+<div id="questões-a-serem-pesquisadas" class="section level3">
+<h3>Questões a serem pesquisadas</h3>
+<ul>
+<li>É possível melhor o desempenho de uma rota apenas ajustando o número de viagens/tipo de veículos?</li>
+<li>Qual o impacto da distância percorrida pelo caminhaão vazio nos KPI</li>
+</ul>
+</div>
+<div id="relatório-do-projeto" class="section level3">
+<h3>Relatório do Projeto</h3>
+<p>Link no <a href="https://github.com/Efsilvaa">meu Github</a> <em>Pages</em>: <a href="projetos/projeto1.html">Projeto 1</a></p>
+<hr />
+</div>
+</div>
+<div id="subprojeto-previsão" class="section level2">
+<h2>Subprojeto <strong>Previsão</strong></h2>
+<ul>
+<li>Título: Análise temporal da série de dados de coleta</li>
+<li>Data:</li>
+</ul>
+<div id="descrição-1" class="section level3">
+<h3>Descrição</h3>
+<p>Definir um modelo de previsão para a quantidade de lixo recolhido nas diversas regiões da cidade de Florianópolis.</p>
+</div>
+<div id="participantes-1" class="section level3">
+<h3>Participantes</h3>
+<ul>
+<li>…</li>
+<li>…</li>
+</ul>
+</div>
+<div id="objetivos-1" class="section level3">
+<h3>Objetivos</h3>
+<ul>
+<li>Identificar os fatores de tendência e sazonalizade nfiguração de um modelo de previsão se Seleção de um conjunto de indicadores de desempenho</li>
+<li>Estudo de</li>
+</ul>
+</div>
+<div id="atividades-programadas-1" class="section level3">
+<h3>Atividades programadas</h3>
+<ul>
+<li>Leitura dos artigos realcionados ao tema</li>
+<li>Preparação e limpeza dos dados para anállise</li>
+<li>Identificar o comportamento da série
+<ul>
+<li>Tendência</li>
+<li>Sazonalidade</li>
+<li>Tipo de sazonalidade (aditiva ou multiplicativa)</li>
+</ul></li>
+<li>Selecionar modelos</li>
+<li>Ajustar e avaliar os modelos</li>
+<li>Comparação dos modelos</li>
+<li>Previsão de curto e médio prazo</li>
+<li>Análise de demanda x recursos</li>
+</ul>
+</div>
+<div id="questões-a-serem-pesquisadas-1" class="section level3">
+<h3>Questões a serem pesquisadas</h3>
+<ul>
+<li>O planejamento atende ao que se espera do futuro de coleta de lixo em florianópolis?</li>
+<li>Qual é o impacto do período de férias na coleta?</li>
+</ul>
+</div>
+<div id="relatório-do-projeto-1" class="section level3">
+<h3>Relatório do Projeto</h3>
+<p>Link no <a href="https://github.com/Efsilvaa">meu Github</a> <em>Pages</em>: <a href="projetos/projeto1.html">Projeto 2</a></p>
 </div>
 </div>
 
-<p>Modelo 2018 - Introdução à Machine Learning.  Prof. Eduardo F. Silva (UFSC-EPS). </p>
 
 
+</div>
+</div>
 
 </div>
 
@@ -387,6 +560,32 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
